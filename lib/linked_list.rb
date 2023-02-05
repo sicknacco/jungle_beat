@@ -17,6 +17,9 @@ class LinkedList
     return data #shows list.append as "doop"
   end
 
+#prepend method will go here
+
+
   def count
     count = 0  #counter starts at 0
       current_node = @head #assigns the current node as head

@@ -40,5 +40,9 @@ RSpec.describe LinkedList do
     expect(list.to_string).to eq("doop")
   end
 
+#prepend test will go here
+
+
+
 
 end
