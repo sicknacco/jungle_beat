@@ -2,23 +2,30 @@ class LinkedList
   attr_reader :head, :count
   def initialize
     @head = nil
-    @count = 0 #starts count at 0
   end
 
   def append(data)
-    @count += 1 #adding 1 for every append
     if @head.nil? #if the head is nill, do the following
        @head = Node.new(data) #@head is a new node
     else
-      current_node = @head #assigns current_node as head
+       current_node = @head #assigns current_node as head
       until current_node.next_node.nil? #until c_n.n_n is false
-        current_node = current_node.next_node #c_n is head. 
+       current_node = current_node.next_node #c_n is head. 
       end
-      current_node.next_node = Node.new(data)
+     current_node.next_node = Node.new(data)
     end
     return data #shows list.append as "doop"
   end
 
+  def count
+    count = 0  #counter starts at 0
+      current_node = @head #assigns the current node as head
+      until current_node.nil? #checks for @head. Which is assigned to c_n
+        count += 1  #adds 1 for each time the block runs
+        current_node = current_node.next_node #moves to next node and repeats
+      end
+    count #Returns total count
+  end
 
   def to_string
     current_node = @head #current_node is the head
@@ -31,7 +38,4 @@ class LinkedList
   end
 
 
-#### Currently on list.head.next_node
-### Output Desired => <Node data="deep" next_node=nil #5678904567890>
-### Currently get nil
 end
