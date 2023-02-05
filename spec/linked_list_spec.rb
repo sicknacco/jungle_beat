@@ -9,17 +9,27 @@ RSpec.describe LinkedList do
     expect(list).to be_instance_of(LinkedList)
   end
 
-  it 'can append' do
+  it 'can append "doop"' do
     list = LinkedList.new
     list.append("doop")
 
     expect(list.head).to be_instance_of(Node)
+    expect(list.head.data).to eq("doop")
+  end
+
+  it 'can append "deep"' do
+    list = LinkedList.new
+    list.append("doop")
+    list.append("deep")
+
+    expect(list.head).to be_instance_of(Node)
+    expect(list.head.next_node.data).to eq("deep")
   end
 
   it 'keeps count' do
     list = LinkedList.new
     list.append("doop")
-#require 'pry'; binding.pry
+    
     expect(list.count).to eq(1)
   end
 
