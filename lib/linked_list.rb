@@ -17,8 +17,12 @@ class LinkedList
     return data #shows list.append as "doop"
   end
 
-#prepend method will go here
-
+  def prepend(data)
+    current_head = @head #gives a start point. Stores the current head in c_h
+    @head = Node.new(data) #creates a new head node and assigns as head (with data)
+    @head.next_node = current_head #places the c_h value as the new head's next node.
+    data
+  end      #1. c_h = doop 2. head is reassigned to the new node that has beep 3. doop is being assigned as beep's next node
 
   def count
     count = 0  #counter starts at 0
