@@ -49,9 +49,10 @@ class LinkedList
     (position -1).times do #shifts nodes -1 times
       current_node = current_node.next_node #Moves to next node
     end
-    new_node = Node.new #Creates a new_node object
-    new_node.next_node = current_node.next_node #
-    
+    new_node = Node.new(data) #Creates a new_node object
+    new_node.next_node = current_node.next_node # new node's next, will become the current's next
+    current_node.next_node = new_node
+    data
   end 
 
 
