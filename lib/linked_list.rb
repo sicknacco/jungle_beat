@@ -9,7 +9,7 @@ class LinkedList
        @head = Node.new(data) #@head is a new node
     else
        current_node = @head #assigns current_node as head
-      until current_node.next_node.nil? #until c_n.n_n is false
+      until current_node.next_node.nil? #until c_n.n_n is nil do the following
        current_node = current_node.next_node #c_n is head. 
       end
      current_node.next_node = Node.new(data)
@@ -51,7 +51,7 @@ class LinkedList
     end
     new_node = Node.new(data) #Creates a new_node object
     new_node.next_node = current_node.next_node # new node's next, will become the current's next
-    current_node.next_node = new_node
+    current_node.next_node = new_node # current's next, will be the new node.
     data
   end 
 
