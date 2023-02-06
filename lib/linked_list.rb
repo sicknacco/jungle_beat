@@ -44,5 +44,17 @@ class LinkedList
     string.strip #Removes empty spaces from string
   end
 
+  def insert(position, data) #expecting an integer and data ex("ploop")
+    current_node = @head #assigns head to the current node. Starts at head
+    (position -1).times do #shifts nodes -1 times
+      current_node = current_node.next_node #Moves to next node
+    end
+    new_node = Node.new #Creates a new_node object
+    new_node.next_node = current_node.next_node #
+    
+  end 
+
+
+
 
 end
