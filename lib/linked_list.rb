@@ -61,17 +61,18 @@ class LinkedList
   end
 
   def includes?(data)
-    self.to_string.include?(data)
+    self.to_string.include?(data) #makes self to string, then get boolean results
   end
 
-#Take the list and use pop to remove and return the last string.
-#def pop
-#current node = @head
-#while- use current_node.next.next to cycle through nodes
-#result = current.next.data
-#current.next = nil
-#result
-
+  def pop
+    current_node = @head #sets the current node as the head
+    while current_node.next_node.next_node #cycle through nodes
+      current_node = current_node.next_node #selects last two nodes
+    end
+      result = current_node.next_node.data #placeholder and selector for data to be removed
+      current_node.next_node = nil #sets next node to nil, which removes last node
+      result #prints results
+  end
 
 
 
