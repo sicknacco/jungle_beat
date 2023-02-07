@@ -55,7 +55,11 @@ class LinkedList
     data
   end 
 
-
-
+# def find (index, number of words to return)
+# words = "deep woo shi shu blop"
+# Turn words into an array
+# Find position and number of results desired
+# Turn results back into a string
+# end
 
 end
