@@ -22,7 +22,7 @@ RSpec.describe LinkedList do
     list.append("doop")
     list.append("deep")
 
-    expect(list.head).to be_instance_of(Node)
+    expect(list.head.data).to eq("doop")
     expect(list.head.next_node.data).to eq("deep")
   end
 
@@ -51,20 +51,22 @@ RSpec.describe LinkedList do
     expect(list.count).to eq(3)
   end
 
- it 'can insert to desired location ' do
+ it 'can insert to desired location' do
     list = LinkedList.new
     list.append("plop")
     list.append("suu")
     list.prepend("dop")
     list.insert(1, "woo")
-
-    
+ 
     expect(list.head.next_node.data).to eq("woo")
     expect(list.to_string).to eq("dop woo plop suu")
     expect(list.count).to eq(4)
  end
 
 
+
+
+  
 
 
 end
