@@ -60,8 +60,9 @@ class LinkedList
     array[position..position + number -1].join(" ") #creates new array from first to last, minus 1 position, then joins back to string 
   end
 
+# def includes? 
+# Use self and make into a string. then see if that string includes (data)
 
 
 
-  
 end
