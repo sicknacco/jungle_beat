@@ -55,11 +55,13 @@ class LinkedList
     data
   end 
 
-# def find (index, number of words to return)
-# words = "deep woo shi shu blop"
-# Turn words into an array
-# Find position and number of results desired
-# Turn results back into a string
-# end
+  def find(position, number)
+    array = self.to_string.split(" ") #creates an array from the string and splits contents
+    array[position..position + number -1].join(" ") #creates new array from first to last, minus 1 position, then joins back to string 
+  end
 
+
+
+
+  
 end
