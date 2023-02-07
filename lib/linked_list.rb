@@ -62,7 +62,9 @@ class LinkedList
 
 # def includes? 
 # Use self and make into a string. then see if that string includes (data)
-
+  def includes?(data)
+    self.to_string.include?(data)
+  end
 
 
 end
