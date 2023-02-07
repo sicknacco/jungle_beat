@@ -64,5 +64,16 @@ class LinkedList
     self.to_string.include?(data)
   end
 
+#Take the list and use pop to remove and return the last string.
+#def pop
+#current node = @head
+#while- use current_node.next.next to cycle through nodes
+#result = current.next.data
+#current.next = nil
+#result
+
+
+
+
 
 end
