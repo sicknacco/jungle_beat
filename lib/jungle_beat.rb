@@ -4,6 +4,13 @@ class JungleBeat
     @list = LinkedList.new
   end
 
+  def append(data)
+    array = data.split(" ")
+    array.each do |sound|
+      list.append(sound)
+    end
+    data
+  end
 
 
 
@@ -17,5 +24,4 @@ class JungleBeat
 
 
 
-  
 end
