@@ -22,7 +22,7 @@ class JungleBeat
     `say -r #{@rate} -v #{@voice} #{@list.to_string}`
   end
 
-
+#This iteration went well! I felt comfortable with it.
 
 
 
