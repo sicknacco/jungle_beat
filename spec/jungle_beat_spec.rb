@@ -20,7 +20,13 @@ RSpec.describe JungleBeat do
   end
 
 
+  it 'can count nodes' do
+    jb = JungleBeat.new
+    jb.append("deep doo ditt")
+    jb.append("woo hoo shu")
 
+    expect(list.count).to eq(6)
+  end
 
 
 
