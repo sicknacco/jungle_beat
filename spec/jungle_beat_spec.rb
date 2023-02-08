@@ -25,7 +25,7 @@ RSpec.describe JungleBeat do
     jb.append("deep doo ditt")
     jb.append("woo hoo shu")
 
-    expect(list.count).to eq(6)
+    expect(jb.count).to eq(6)
   end
 
 
