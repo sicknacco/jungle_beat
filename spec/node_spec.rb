@@ -14,3 +14,5 @@ end
 
 ## This is some more code it has many commits. but NO Pushes!!!!.
 ## Here is a test
+## Here is another test
+## Here is method
