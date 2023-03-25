@@ -73,8 +73,4 @@ class LinkedList
       current_node.next_node = nil #sets next node to nil, which removes last node
       result #prints results
   end
-
-
-
-
 end
